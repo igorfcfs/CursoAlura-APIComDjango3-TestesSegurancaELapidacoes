@@ -144,3 +144,19 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
+
+# Connection with Redis, Optional. Warning: it is not possible to install Redis on Windows.
+# To download Redis, follow this link: https://redis.io/
+
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://127.0.0.1:6379/1",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
+
+# SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+# SESSION_CACHE_ALIAS = "default"
